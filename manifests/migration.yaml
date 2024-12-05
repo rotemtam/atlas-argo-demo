@@ -1,0 +1,23 @@
+apiVersion: db.atlasgo.io/v1alpha1
+kind: AtlasMigration
+metadata:
+  name: appmigration
+spec:
+  cloud:
+    tokenFrom:
+      secretKeyRef:
+        key: ATLAS_TOKEN
+        name: atlas-token
+  protectedFlows:
+    migrateDown:
+      allow: true
+  urlFrom:
+    secretKeyRef:
+      key: url
+      name: postgres-credentials
+  dir:
+    configMapRef:
+      name: migrations-configmap
+    remote:
+      name: atlas-argo-demo
+      tag: a704b23962c35337706aff1ff87d93280daefb90
