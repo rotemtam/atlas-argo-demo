@@ -21,5 +21,3 @@ spec:
     remote:
       name: atlas-argo-demo
       tag: fb9fa1f68caf5d965c5a8d0a9591a5f64186a095
-
-
