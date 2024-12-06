@@ -20,4 +20,6 @@ spec:
       name: migrations-configmap
     remote:
       name: atlas-argo-demo
-      tag: a704b23962c35337706aff1ff87d93280daefb90
+      tag: fb9fa1f68caf5d965c5a8d0a9591a5f64186a095
+
+
